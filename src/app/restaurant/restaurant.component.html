@@ -1,0 +1,23 @@
+<p>Welcome to Zomato</p>
+<table class="table table-bordered">
+    <thead>
+        <tr>
+            <th scope="col">Restaurant Names</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let item of list.collections">
+            <td>{{ item.collection.title }}</td>
+            <td><img src={{item.collection.image_url}} /> </td>
+        </tr>
+        
+    </tbody>
+</table>
+<!-- <form>
+    <div class="form-group">
+        <label for="city_id">City Id:</label>
+        <input type="text" class="form-control" name="id" [(ngModel)]="id">
+        <br> 
+        <button type="submit" class="btn btn-primary" (click)="getRestaurant()">Submit</button>
+    </div>
+</form> -->
